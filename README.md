@@ -75,6 +75,9 @@ If you really want gcc this video shows you how: https://www.youtube.com/watch?v
 
 To check if you successfully got gcc & gdb on your path	run `gcc -v` and `gdb -v`
 
+GCC from some sources will not work on windows. If you have problems with gcc not accepting
+some args such as `-Og` and `*.c`, uninstall your trash gcc and install mingw-w64-builds gcc. 
+
 
 ### Windows Subsystem for linux
 It is possible to get a very nice setup where you can easly change between compiling and debuging on native windows and WSL.
@@ -94,6 +97,6 @@ I do not feel like typing up the instructions to get this setup working, but hop
 ## Known Issues
 - On Mac sometimes the compiler puts the excutable in an odd spot thus causing the debugger problems.
 - TDM-gcc gcc does not work and will give the error `gcc: error: *.c: Invalid argument `
-- One windows there is no way to detect if you are using a the linux subsystem wsl from VScode started from native windows. To make things work start VScode from the subsystem console window using the command `code`. You will also have to install the WSL extension....<--I am partly wrong, will write up currect instructions on how to setup WSL at some point.
+
 
 If you find an issues that can be fixed or improved submit a pull request
