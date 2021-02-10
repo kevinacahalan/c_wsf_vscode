@@ -12,11 +12,12 @@ This workspace folder works on Mac, Windows, and Linux. Both debugging and compi
 Select any source file in the program folder of the program you want to debug and then hit the keys `CTRL + SHIFT + B`.
 
 - To Debug:
-Place a breakpoint were you want the debugger to start debugging and then hit the `f5` key.
+Place a breakpoint were you want the debugger to start debugging and then hit the `f5` key. To place a breakpoint
+hold you mouse to the left of the line number for the line you want to start debugging on.
 If your program takes command line arguments hardcode those args into the args section in the launch.json file. If you want to find where your program crashes run the debugger without placing a breakpoint.
 
 - To Run a Program:
-After successfuly building there should be an executable with the same name as the folder it was compiled placed in the folder that is was compiled in. On Mac or Linux this excuatable would be called `program_folder_name`, on Windows `program_folder_name.exe`. To run the executable right-click on it and pick the option "Open in Integrated Terminal". Next if you are on Mac or linux run `./program_folder_name`, on Windows `.\program_folder_name`.
+After successfuly building there should be an executable with the same name as the folder it was compiled placed in the folder that is was compiled in. On Mac or Linux this excuatable would be called `program_folder_name`, on Windows `program_folder_name.exe`. To run the executable right-click on it and pick the option "Open in Integrated Terminal". Next if you are on Mac or linux run `./program_folder_name`, on Windows `.\program_folder_name.exe`.
 
 
 ## Prerequisite setup stuff
