@@ -83,7 +83,7 @@ some args such as `-Og` and `*.c`, uninstall your trash gcc and install mingw-w6
 ### Windows Subsystem for linux
 It is possible to get a very nice setup where you can easly change between compiling and debuging on native windows and WSL.
 This setup is the most optimal for windows users sense it's very useful you to have easy access to some very powerful Unix exclusive tools.
-I do not feel like typing up the instructions to get this setup working, but hopfully will at some point. In genreal the additional things you have to do are, install WSL, install the WSL extention, click on the green button in the lower left then select `Remote-WSL: Reopen folder in WSL`, then install the C/C++ extention a second time while VScode is in WSL mode.
+I do not feel like typing up the instructions to get this setup working, but hopfully will at some point. In general the additional things you have to do are, install WSL, install the WSL extention, click on the green button in the lower left then select `Remote-WSL: Reopen folder in WSL`, then install the C/C++ extention a second time while VScode is in WSL mode.
 
 
 
