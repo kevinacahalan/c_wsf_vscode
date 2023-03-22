@@ -1,5 +1,5 @@
 // Putting spaces in files names and folder names is a bad idea and can make
-// messing with these folders and files from the commmand line a pain
+// messing with these folders and files from the command line a pain
 
 #include <stdio.h>
 
