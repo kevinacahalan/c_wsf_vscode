@@ -1,9 +1,9 @@
 ## This is a pre-made workspace folder for C programming on Visual Studio Code
-This workspace folder works on Mac, Windows, and Linux. Both debugging and compiling work properly. Make sure you read the prerequisite steps below before trying to use this thing. To use this workspace folder open it as your highest folder in Visual Studio Code. To add a program to this workspace folder make a subfolder to put its source files in. After finishing the prerequsite setup stuff things should magically work. In the future when there is more time I will make a few similar workspace folders, one for C++ and one that uses makefiles.
+This workspace folder works on Mac, Windows, and Linux. Both debugging and compiling work properly. Make sure you read the prerequisite steps below before trying to use this thing. To use this workspace folder open it as your highest folder in Visual Studio Code. To add a program to this workspace folder make a subfolder to put its source files in. After finishing the prerequisite setup stuff things should magically work. In the future when there is more time I will make a few similar workspace folders, one for C++ and one that uses makefiles.
 
 - How to download:
 
-![how_to_download.png](https://cdn.discordapp.com/attachments/750174753372766280/794445866790289428/how_to_download.png)
+![Download Instructions](how_to_download.png)
 
 
 ## How to use
@@ -17,7 +17,7 @@ hold you mouse to the left of the line number for the line you want to start deb
 If your program takes command line arguments hardcode those args into the args section in the launch.json file. If you want to find where your program crashes run the debugger without placing a breakpoint.
 
 - To Run a Program:
-After successfuly building there should be an executable with the same name as the folder it was compiled placed in the folder that is was compiled in. On Mac or Linux this excuatable would be called `program_folder_name`, on Windows `program_folder_name.exe`. To run the executable right-click on it and pick the option "Open in Integrated Terminal". Next if you are on Mac or linux run `./program_folder_name`, on Windows `.\program_folder_name.exe`.
+After successfully building there should be an executable with the same name as the folder it was compiled placed in the folder that is was compiled in. On Mac or Linux this executable would be called `program_folder_name`, on Windows `program_folder_name.exe`. To run the executable right-click on it and pick the option "Open in Integrated Terminal". Next if you are on Mac or linux run `./program_folder_name`, on Windows `.\program_folder_name.exe`.
 
 
 ## Prerequisite setup stuff
@@ -25,8 +25,8 @@ After successfuly building there should be an executable with the same name as t
  
 For this workspace folder to work YOU MUST HAVE gcc & gdb on your path.
 	
-You must also have the C/C++ VScode extention from microsoft installed.	
-Uninstall any other extension having to do with C/C++ as these extentions	
+You must also have the C/C++ VScode extension from microsoft installed.	
+Uninstall any other extension having to do with C/C++ as these extensions	
 might fight with the one from Microsoft, exp the extension from Austin, or
 that extension called "CodeRunner"...	
 
@@ -81,9 +81,9 @@ some args such as `-Og` and `*.c`, uninstall your trash gcc and install mingw-w6
 
 
 ### Windows Subsystem for linux
-It is possible to get a very nice setup where you can easly change between compiling and debuging on native windows and WSL.
+It is possible to get a very nice setup where you can easily change between compiling and debugging on native windows and WSL.
 This setup is the most optimal for windows users since it's very useful to have easy access to some very powerful Unix exclusive tools.
-I do not feel like typing up the instructions to get this setup working, but hopfully will at some point. In general the additional things you have to do are, install WSL, install the WSL extention, click on the green button in the lower left then select `Remote-WSL: Reopen folder in WSL`, then install the C/C++ extention a second time while VScode is in WSL mode.
+I do not feel like typing up the instructions to get this setup working, but hopefully will at some point. In general the additional things you have to do are, install WSL, install the WSL extension, click on the green button in the lower left then select `Remote-WSL: Reopen folder in WSL`, then install the C/C++ extension a second time while VScode is in WSL mode.
 
 
 
@@ -92,11 +92,11 @@ I do not feel like typing up the instructions to get this setup working, but hop
 - Do not put this workspace folder inside a workspace folder, in other words do not have this workspace folder be a subfolder. This workspace folder must be the highest folder open in VScode for it to work.
 - A program folder should be a subfolder of this workspace folder, do not nest program folders as this might cause activity that might confuse you.
 - Do everything specified in the prerequisite setup setups...
-- If stuff is not working before complaining or giving up double check and make sure you have the Coderunner extention not installed.
+- If stuff is not working before complaining or giving up double check and make sure you have the CodeRunner extension not installed.
 - On Linux and probably Mac you can not run programs on a normal USB stick without doing some odd stuff. In other words if you have this workspace folder on a USB stick take it off before using it with Linux or Mac.
 
 ## Known Issues
-- On Mac sometimes the compiler puts the excutable in an odd spot thus causing the debugger problems.
+- On Mac sometimes the compiler puts the executable in an odd spot thus causing the debugger problems.
 - On mac the error and warning highlighting can sometimes be of, mac uses clang to compile. As a temp fix in the tasks.json file change line 141 to be "$clang" from "$gcc", line 141 specifies the problem matcher.
 - TDM-gcc gcc does not work and will give the error `gcc: error: *.c: Invalid argument `, mingw-w64-builds gcc
 
